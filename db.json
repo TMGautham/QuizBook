@@ -1,0 +1,173 @@
+{
+  "quiz": [
+    {
+      "id": 1,
+      "question": "What is the Capital of Assam?",
+      "options": ["Guwahati", "Dispur", "Shillong", "Digboi"],
+      "answer": "Dispur"
+    },
+    {
+      "id": 2,
+      "question": "What is the Capital of China?",
+      "options": ["Beijing", "Shangai", "Hanoi", "Tokyo"],
+      "answer": "Beijing"
+    },
+    {
+      "id": 3,
+      "question": "Who is the first India T20I captain?",
+      "options": ["MS Dhoni", "S Ganguly", "V Sehwag", "R Dravid"],
+      "answer": "V Sehwag"
+    },
+    {
+      "id": 4,
+      "question": "Who is the highest run-scorer in 1983 Cricket WC final?",
+      "options": ["Gavaskar", "Richards", "Ravi Shastri", "Srikkanth"],
+      "answer": "Srikkanth"
+    },
+    {
+      "id": 5,
+      "question": "Which year was Mahatma Gandhi born?",
+      "options": ["1869", "1870", "1871", "1872"],
+      "answer": "1869"
+    }
+  ],
+  "cricketQuiz": [
+    {
+      "id": 1,
+      "question": "Who is the first India Men's T20I captain?",
+      "options": ["MS Dhoni", "S Ganguly", "V Sehwag", "R Dravid"],
+      "answer": "V Sehwag"
+    },
+    {
+      "id": 2,
+      "question": "Which team first scored a 400+ score in men's ODI cricket?",
+      "options": ["India", "South Africa", "Australia", "West Indies"],
+      "answer": "Australia"
+    },
+    {
+      "id": 3,
+      "question": "Which team first chased a 400+ score successfully in men's ODI cricket?",
+      "options": ["India", "South Africa", "Australia", "West Indies"],
+      "answer": "South Africa"
+    },
+    {
+      "id": 4,
+      "question": "Who is the second highest wicket taker in Test cricket?",
+      "options": [
+        "James Anderson",
+        "Shane Warne",
+        "Muthiah Muralidharan",
+        "Stuart Broad"
+      ],
+      "answer": "Shane Warne"
+    },
+    {
+      "id": 5,
+      "question": "Which stadium has hosted the highest number of ODI matches?",
+      "options": ["The Lord's", "Melbourne", "Leeds", "Sharjah"],
+      "answer": "Sharjah"
+    },
+    {
+      "id": 6,
+      "question": "Who is the first bowler to take a 10 wicket haul in a single test Innings?",
+      "options": ["Jim Laker", "Anil Kumble", "Ajaz Patel", "Glenn McGrath"],
+      "answer": "Jim Laker"
+    },
+    {
+      "id": 7,
+      "question": "Who is the youngest player to play International Cricket?",
+      "options": [
+        "Hasan Raza",
+        "Parthiv Patel",
+        "Sachin Tendulkar",
+        "Naseem Shah"
+      ],
+      "answer": "Hasan Raza"
+    },
+    {
+      "id": 8,
+      "question": "Which of the below teams have never won an ICC Under-19 Cricket World Cup?",
+      "options": ["Australia", "South Africa", "Bangladesh", "New Zealand"],
+      "answer": "New Zealand"
+    },
+    {
+      "id": 9,
+      "question": "WHich bowler has the best bowling figures in an ODI match?",
+      "options": ["W Akram", "A Kumble", "C Vaas", "G McGrath"],
+      "answer": "C Vaas"
+    },
+    {
+      "id": 10,
+      "question": "Who is the first cricketer to score six sixes in a single over in an international match?",
+      "options": [
+        "Sir Garfield Sobers",
+        "H Gibbs",
+        "R Shastri",
+        "Yuvraj Singh"
+      ],
+      "answer": "H Gibbs"
+    }
+  ],
+  "capitalQuiz": [
+    {
+      "id": 1,
+      "question": "What is the Capital of Assam?",
+      "options": ["Guwahati", "Dispur", "Shillong", "Digboi"],
+      "answer": "Dispur"
+    },
+    {
+      "id": 2,
+      "question": "What is the Capital of China?",
+      "options": ["Beijing", "Shangai", "Hanoi", "Tokyo"],
+      "answer": "Beijing"
+    },
+    {
+      "id": 3,
+      "question": "What is the Capital of Gujarat?",
+      "options": ["Gandhinagar", "Ahmedabad", "Rajkot", "Baroda"],
+      "answer": "Gandhinagar"
+    },
+    {
+      "id": 4,
+      "question": "What is the Capital of Kazakhstan?",
+      "options": ["Almaty", "Istanbul", "Astana", "Samarkhand"],
+      "answer": "Astana"
+    },
+    {
+      "id": 5,
+      "question": "What is the Capital of Australia?",
+      "options": ["Canberra", "Melbourne", "Sydney", "Brisbane"],
+      "answer": "Canberra"
+    },
+    {
+      "id": 6,
+      "question": "What is the Capital of New Zealand?",
+      "options": ["Adelaide", "Auckland", "Christchurch", "Wellington"],
+      "answer": "Wellington"
+    },
+    {
+      "id": 7,
+      "question": "What is the Capital of Libya?",
+      "options": ["Valletta", "Tripoli", "Port Louis", "Victoria"],
+      "answer": "Tripoli"
+    },
+    {
+      "id": 8,
+      "question": "What is the Capital of Sierra Leone?",
+      "options": ["Valletta", "Tripoli", "Freetown", "Victoria"],
+      "answer": "Freetown"
+    },
+    {
+      "id": 9,
+      "question": "What is the Capital of Costa Rica?",
+      "options": ["San Jose", "Freetown", "Atlanta", "Limon"],
+      "answer": "San Jose"
+    },
+    {
+      "id": 10,
+      "question": "What is the Capital of North Korea?",
+      "options": ["Seoul", "Pyongyang", "Hanoi", "Tokyo"],
+      "answer": "Pyongyang"
+    }
+  ]
+}
