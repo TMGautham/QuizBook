@@ -1,16 +1,15 @@
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
+import { BrowserRouter } from "react-router-dom";
 import Quiz from "./Quiz";
-import { renderWithRedux } from "./testutil";
+import { renderWithRedux } from "../testutil";
 
 describe("Quiz", () => {
-  test("Quiz loads", () => {
-    const { store } = renderWithRedux(<Quiz />);
-    const { getByText } = screen;
-    expect(screen.getByText(/Question number/i)).toBeInTheDocument();
-  });
-
   test("first question loads", async () => {
-    renderWithRedux(<Quiz />);
+    renderWithRedux(
+      <BrowserRouter>
+        <Quiz url={"http://localhost:3000/quiz"} />
+      </BrowserRouter>
+    );
     await waitFor(() => {
       expect(screen.getByText(/Gangtok/i)).toBeInTheDocument();
       expect(screen.getByText(/Question number : 1/i)).toBeInTheDocument();
@@ -19,7 +18,11 @@ describe("Quiz", () => {
   });
 
   test("answering first question correctly", async () => {
-    renderWithRedux(<Quiz />);
+    renderWithRedux(
+      <BrowserRouter>
+        <Quiz url={"http://localhost:3000/quiz"} />
+      </BrowserRouter>
+    );
 
     let correctAnswer;
     await waitFor(() => {

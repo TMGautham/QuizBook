@@ -1,11 +1,12 @@
-import Quiz from "./Quiz";
+import { RouterProvider } from "react-router-dom";
+import { quizRouter } from "./router";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h2>Take this General Knowledge Quiz!!</h2>
-      <Quiz url={"http://localhost:3000/quiz"} />
+      <h2>Take a Quiz!!</h2>
+      <RouterProvider router={quizRouter} />
     </div>
   );
 }

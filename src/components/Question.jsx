@@ -1,5 +1,5 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 const Question = ({ question }) => {
   const dispatch = useDispatch();
@@ -9,7 +9,6 @@ const Question = ({ question }) => {
   };
   return (
     <>
-      {/* screen.debug(); */}
       <div>Question : {question.question} </div>
       <ol>
         {question.options.map((option, index) => (

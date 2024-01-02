@@ -1,8 +1,7 @@
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import Question from "./Question";
-import { renderWithRedux } from "./testutil";
-import { createReducer } from "@reduxjs/toolkit";
-import { question } from "./mocks/data";
+import { renderWithRedux } from "../testutil";
+import { question } from "../mocks/data";
 
 describe("Question", () => {
     test("Answering a question correctly", async () => {
