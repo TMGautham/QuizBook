@@ -13,6 +13,6 @@ describe("App", () => {
     const { store } = renderWithRedux(<App />);
     // console.log(store.getState());
     const { getByText } = screen;
-    expect(screen.getByText(/Take a Quiz!!/i)).toBeInTheDocument();
+    expect(screen.getByText(/Gautham's Quiz!/i)).toBeInTheDocument();
   });
 });

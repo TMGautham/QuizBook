@@ -8,7 +8,6 @@ const initialState = {
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case "GET_QUIZ":
-      console.log("GET_QUIZ");
       return {
         ...state,
         data: action.payload,
@@ -23,7 +22,6 @@ const reducer = (state = initialState, action) => {
         questionsAnswered: state.questionsAnswered + 1,
       };
     case "END_QUIZ":
-      console.log("END_QUIZ");
       return {
         data: [],
         score: 0,

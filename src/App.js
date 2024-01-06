@@ -1,13 +1,21 @@
 import { RouterProvider } from "react-router-dom";
-import { quizRouter } from "./router";
+import { quizRouter } from "./router/router";
+
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <h2>Take a Quiz!!</h2>
-      <RouterProvider router={quizRouter} />
-    </div>
+    <>
+      <nav className="navbar navbar-expand-lg bg-dark p-0">
+        <div className="navbar-brand text-light padding-sides-15">
+          <h1>Gautham's Quiz! Test your General Knowledge!</h1>
+        </div>
+      </nav>
+
+      <div className="App">
+        <RouterProvider router={quizRouter} />
+      </div>
+    </>
   );
 }
 

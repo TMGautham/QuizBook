@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
-import Quiz from "./components/Quiz";
-import { QuizBook } from "./components/QuizBook";
+import Quiz from "../components/Quiz";
+import About from "../components/About";
+import { QuizBook } from "../components/QuizBook";
 export const quizRouter = createBrowserRouter([
   {
     path: "/",
@@ -17,6 +18,10 @@ export const quizRouter = createBrowserRouter([
       {
         path: "/capitalQuiz",
         element: <Quiz url={"http://localhost:3000/capitalQuiz"} />,
+      },
+      {
+        path: "/about",
+        element: <About />,
       },
     ],
   },

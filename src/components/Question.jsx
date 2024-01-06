@@ -3,7 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 
 const Question = ({ question }) => {
   const dispatch = useDispatch();
+  // const score = useSelector(state => state)
   const handleAnswer = (option) => {
+    // console.log(score)
     let score = option === question.answer ? 10 : 0;
     return dispatch({ type: "SET_SCORE", score });
   };

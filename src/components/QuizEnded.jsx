@@ -20,8 +20,8 @@ const QuizEnded = ({ url, score }) => {
     return (
         <>
             <div>Quiz Ended!</div >
-            {completedScore.current}
-            <button onClick={() => navigate('/')}>Go Back Home!</button>
+            <div>Your Score : {completedScore.current}</div>
+            <button className="btn btn-primary btn-xs" onClick={() => navigate('/')}>Go Back Home!</button>
         </>
     )
 }
