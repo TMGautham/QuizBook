@@ -7,16 +7,17 @@ const QuizEnded = ({ url, score }) => {
     const dispatch = useDispatch();
     const completedScore = useRef(score)
 
-    function updateBestScore() {
-        const previousBestScore = localStorage.getItem(url)
-        if (score > previousBestScore) {
-            localStorage.setItem(url, score)
-        }
-    }
+
     useEffect(() => {
+        function updateBestScore() {
+            const previousBestScore = localStorage.getItem(url)
+            if (score > previousBestScore) {
+                localStorage.setItem(url, score)
+            }
+        }
         updateBestScore()
         dispatch({ type: 'END_QUIZ' })
-    }, [])
+    }, [dispatch, url, score])
     return (
         <>
             <div>Quiz Ended!</div >

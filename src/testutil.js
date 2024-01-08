@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 import { Provider } from "react-redux";
-import reducer from "./reducers";
+import reducer from "./reducers/reducers";
 import { configureStore } from "@reduxjs/toolkit";
 
 export const renderWithRedux = (

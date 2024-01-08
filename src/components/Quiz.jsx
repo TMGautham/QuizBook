@@ -18,7 +18,7 @@ function Quiz({ url }) {
         dispatch(fetchAPI(url));
 
         // console.log(questionNumber === data.length && questionNumber > 0)
-    }, []);
+    }, [dispatch, url]);
 
 
     // console.log("questionNumber " + questionNumber)
