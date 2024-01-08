@@ -6,6 +6,14 @@ import Question from "./Question";
 import QuizEnded from "./QuizEnded";
 import "../App.css";
 
+/*
+This component describes a quiz on a particular topic. A quiz will contain multiple questions.
+This component conditionally renders the Question component.
+This component renders the a component after completion of quiz with score. 
+This component keeps track of all the questions, number of questions answered, score and ends the quiz on completion of all questions.
+*/
+
+
 function Quiz({ url }) {
     const dispatch = useDispatch();
     const data = useSelector((state) => state.data);
@@ -14,16 +22,10 @@ function Quiz({ url }) {
     const quizEnded = useSelector(state => state.quizEnded)
     const previousBestScore = localStorage.getItem(url)
     useEffect(() => {
-        // console.log("rendering Quiz")
         dispatch(fetchAPI(url));
-
-        // console.log(questionNumber === data.length && questionNumber > 0)
     }, [dispatch, url]);
 
 
-    // console.log("questionNumber " + questionNumber)
-    // console.log("number of questions : " + data.length)
-    // console.log("quizEnded " + quizEnded)
     return <>
 
         <main className="Question">
@@ -31,7 +33,7 @@ function Quiz({ url }) {
             <div className="card card-margin" style={{ "width": 500 }}>
                 <div className="card-body">
                     <h2 className="card-title">Quiz!</h2>
-                    {/* <h3 className="card-subtitle mb-2 text-muted"> {questionNumber < data.length ? <div>Question number : {questionNumber + 1}</div> : <></>}</h3> */}
+
                     {questionNumber < data.length ? <h3 className="card-subtitle mb-2 text-muted">Question number : {questionNumber + 1}</h3> : <></>}
                     <div className="card-text">{
                         (data.length > 0 && questionNumber < data.length) ? <><Question question={data[questionNumber]} /><p className="card-link">Score : {score}/{data.length * 10}</p></> : (((questionNumber === data.length && questionNumber > 0) || quizEnded) ? <QuizEnded url={url} score={score} /> : <div>Quiz Loading!</div>)

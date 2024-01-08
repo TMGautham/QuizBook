@@ -4,7 +4,7 @@ import { renderWithRedux } from "../testutil";
 import { question } from "../mocks/data";
 
 describe("Question", () => {
-    test("Answering a question correctly", async () => {
+    test("answering a question correctly adds 10 points", async () => {
         const { store } = renderWithRedux(<Question question={question} />);
         const que = screen.getByText(/What is the Capital of Assam?/i)
         const correctAnswer = screen.getByText(/Dispur/i)
@@ -12,7 +12,7 @@ describe("Question", () => {
         expect(store.getState().score).toBe(10)
     });
 
-    test("Answering a question wrongly", async () => {
+    test("answering a question incorrectly adds 0 points", async () => {
         const { store } = renderWithRedux(<Question question={question} />);
         const que = screen.getByText(/What is the Capital of Assam?/i)
         const correctAnswer = screen.getByText(/Guwahati/i)

@@ -2,6 +2,12 @@ import React, { useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useDispatch } from "react-redux";
 
+/*
+This component describes the end card of the quiz.
+This component has a button that takes user to the home page.
+This component stores the score in user's local storage if the score obtained was the highest score obtained by the user for this quiz.
+*/
+
 const QuizEnded = ({ url, score }) => {
     const navigate = useNavigate();
     const dispatch = useDispatch();

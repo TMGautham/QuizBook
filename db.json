@@ -92,7 +92,7 @@
     },
     {
       "id": 9,
-      "question": "WHich bowler has the best bowling figures in an ODI match?",
+      "question": "Which bowler has the best bowling figures in an ODI match?",
       "options": ["W Akram", "A Kumble", "C Vaas", "G McGrath"],
       "answer": "C Vaas"
     },

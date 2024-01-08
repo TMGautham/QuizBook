@@ -1,6 +1,15 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 
+/*
+This component describes an individual question in a quiz (and not the quiz as whole).
+This component does not track any details of the quiz (eg. numbers of questions answered, quiz score etc.).
+This component lets user answer the question.
+User gets 10 points in case of providing the correct answer.
+User gets 0 points in case of providing an correct answer.
+
+*/
+
 const Question = ({ question }) => {
   const dispatch = useDispatch();
   // const score = useSelector(state => state)

@@ -52,9 +52,10 @@ const About = () => {
         <section>
           <h3>Future plans:</h3>
           <ul>
-            <li>Mirgrate to RTK</li>
-            <li>Host a decidated backend API instead of JSON server</li>
+            <li>Migrate to RTK</li>
+            <li>Host a decidated backend API instead of a JSON server</li>
             <li>Add more quizzes</li>
+            <li>Clear current high score</li>
             <li>Improve UI</li>
           </ul>
         </section>

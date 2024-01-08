@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom'
 
 import "../App.css";
 
+/*
+This component has routes to various quizzes in differnt topics.
+This component has a route to the 'About' component which explains briefly about the tech used in the app.
+*/
+
 export const QuizBook = () => {
     return (
         <>

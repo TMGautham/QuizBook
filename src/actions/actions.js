@@ -1,30 +1,28 @@
 import axios from "axios";
 
-export const fetchAPI = (url) => {
+export function fetchAPI(url) {
   return (dispatch) => {
-    axios
+    return axios
       .get(url)
       .then((response) => response.data)
-      .then((response) => dispatch({ type: "GET_QUIZ", payload: response }));
+      .then((response) => dispatch(getQuiz(response)))
+      .catch((error) => console.error(error));
   };
-};
-
-// export const fetchAPI2 = () => {
-//   return (dispatch) => {
-//     axios
-//       .get("http://localhost:3000/quiz")
-//       .then((response) => response.data)
-//       .then((response) => dispatch({ type: "GET_QUIZ", payload: response }));
-//   };
-// };
+}
 
 export function setScore(payload) {
-  console.log({
-    type: "SET_SCORE",
-    score: payload,
-  });
   return {
     type: "SET_SCORE",
     score: payload,
   };
+}
+export function getQuiz(response) {
+  return {
+    type: "GET_QUIZ",
+    payload: response,
+  };
+}
+
+export function endQuiz() {
+  return { type: "END_QUIZ" };
 }

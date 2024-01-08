@@ -37,3 +37,59 @@ export const mockQuiz = [
     answer: "1869",
   },
 ];
+
+export const initialState = {
+  data: [],
+  score: 0,
+  questionsAnswered: 0,
+  quizEnded: false,
+};
+
+export const quizEndState = {
+  data: [],
+  score: 0,
+  questionsAnswered: 0,
+  quizEnded: true,
+};
+
+export const newQuizLoadState = {
+  data: mockQuiz,
+  score: 0,
+  questionsAnswered: 0,
+  quizEnded: false,
+};
+
+export const firstQuestionCorrectlyAnsweredState = {
+  data: mockQuiz,
+  score: 10,
+  questionsAnswered: 1,
+  quizEnded: false,
+};
+
+export const secondQuestionCorrectlyAnsweredState = {
+  data: mockQuiz,
+  score: 20,
+  questionsAnswered: 2,
+  quizEnded: false,
+};
+
+export const secondQuestionIncorrectlyAnsweredState = {
+  data: mockQuiz,
+  score: 10,
+  questionsAnswered: 2,
+  quizEnded: false,
+};
+
+export const finalQuestionAboutToAnswerState = {
+  data: mockQuiz,
+  score: 40,
+  questionsAnswered: 4,
+  quizEnded: false,
+};
+
+export const allQuestionsAnsweredState = {
+  data: mockQuiz,
+  score: 40,
+  questionsAnswered: 5,
+  quizEnded: false,
+};
