@@ -4,8 +4,7 @@ export function fetchAPI(url) {
   return (dispatch) => {
     return axios
       .get(url)
-      .then((response) => response.data)
-      .then((response) => dispatch(getQuiz(response)))
+      .then((response) => dispatch(getQuiz(response.data)))
       .catch((error) => console.error(error));
   };
 }
