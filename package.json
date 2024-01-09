@@ -31,7 +31,7 @@
   "scripts": {
     "start": "set PORT=3006 && react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --detectOpenHandles",
+    "test": "react-scripts test --detectOpenHandles  -- --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -51,6 +51,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "axe-core": "^4.8.3",
+    "axe-playwright": "^1.2.3",
+    "playwright": "^1.40.1"
   }
-  
 }
